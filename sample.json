@@ -1,0 +1,11 @@
+{
+    "labels": ["January", "February", "March", "April", "May"],
+    "datasets": [{
+      "label": "Sample Data",
+      "backgroundColor": "rgba(54, 162, 235, 0.2)",
+      "borderColor": "rgba(54, 162, 235, 1)",
+      "borderWidth": 1,
+      "data": [4, 19, 3, 5, 12]
+    }]
+  }
+  
