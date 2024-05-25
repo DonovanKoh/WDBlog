@@ -7,6 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JxpgwXuDKzU?si=eq5-IN6LGhn14TCt?autoplay=1" title="YouTube video player" frameborder="0" autoplay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe id="ytplayer" type="text/html" width="640" height="360"src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"frameborder="0"></iframe>
     <canvas id="myChart" width="400" height="400"></canvas>
 
     <script>
@@ -32,12 +34,14 @@
                     scales: {
                         yAxes: [{
                             ticks: {
-                                beginAtZero: true
+                                beginAtZero: true,
+                                min: 0 // Ensure that the y-axis starts from 0
                             }
                         }]
                     }
                 }
             };
+
 
             var myChart = new Chart(
                 document.getElementById('myChart'),
